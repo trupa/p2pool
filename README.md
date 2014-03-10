@@ -56,7 +56,10 @@ ltc_scrypt module that includes the scrypt proof of work code that Litecoin uses
 
 Linux:
 
-    cd litecoin_scrypt
+    cd py_modules\litecoin_scrypt
+    sudo python setup.py install
+	
+	cd py_modules\vertcoin_scrypt
     sudo python setup.py install
 
 Windows (mingw):
@@ -65,7 +68,10 @@ Windows (mingw):
 
 In bash type this:
 
-    cd litecoin_scrypt
+    cd py_modules\litecoin_scrypt
+    C:\Python27\python.exe setup.py build --compile=mingw32 install
+	
+	cd py_modules\vertcoin_scrypt
     C:\Python27\python.exe setup.py build --compile=mingw32 install
 
 Windows (microsoft visual c++)
