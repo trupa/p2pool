@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,100,100italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+		<script src="conf/settings.js"></script>
+
+	</head>
+	
+	<body>
+	
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div>
+					<a class="btn btn-default"  href="/static/Index.html">Dashboard</a>
+					<a class="btn btn-default"  href="/static/graphs.html">Details</a>
+					<a class="btn btn-default"  href="/static/Howto.html">How To</a>
+				</div>
+			</div>
+		</div>
+		
+	
+		<center>
+		<tr>
+			<h5>
+			Connection using CGminer:<br><br>
+			<b>cgminer.exe -o [IP]:[PORT]  -u "[Address]+[Diffculty]" -p [Pass] [CGminer settings]</b><br><br>
+			<b>[IP]</b> : <span id="ip"></span><br>
+			<b>[PORT]</b> : <span id="port"></span><br>
+			<b>[Address]</b> : Your wallet address<br>
+			<b>[Pass]</b> : Anything<br>
+			<b>[CGminer settings]</b> : your personal cgminer settings (for more info click: <a href="https://www.google.com/#q=cgminer+settings">here</a>)<br>
+			<b>[Difficulty]</b> : Optional but recommended in order to get better stats.<br> (your hashrate in KHash/s)*0.00000116414<br><br>
+			<b>Example for a 1000 Khash/s:</b><br><br>
+			cgminer.exe -o <span id="ip2"></span>:<span id="port2"></span> -u 175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W+0.00116414 -I 13<br><br>
+			<!--
+			<b>PORTS:</b><br><br>
+			<b>DOGE:</b> 9555<br>
+			<b>GPUC:</b> 9404<br>
+			<b>RDD:</b> 9443<br>
+			-->
+			
+			
+			</h5>
+		</tr>
+		</center>
+	  
+	 </body>
+</html>
